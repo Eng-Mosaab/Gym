@@ -1,0 +1,290 @@
+@media (min-width:992px){
+
+    section{
+        padding:3rem 20px;
+    }
+
+    header .hero-content h2{
+        font-size:3.75rem;
+    }
+
+    header .hero-content h4{
+        font-size:2.5rem;
+    }
+
+    .trainers-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .gallery-images{
+        grid-template-rows:repeat(3,300px);
+    }
+
+    footer{
+        padding-top:3rem;
+    }
+
+    .footer-columns{
+        flex-direction:row;
+    }
+
+    .footer-col{
+        flex:1;
+    }
+
+}
+
+@media (min-width:768px){
+
+    #About{
+        flex-direction:row;
+        align-items:center;
+    }
+
+    #About .about-text,
+    #About .about-image{
+        flex:0 0 50%;
+        max-width:50%;
+    }
+
+    .clients-grid{
+        flex-direction:row;
+    }
+
+    .client-card{
+        flex:1;
+    }
+
+    .trainers-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .contact-info{
+        flex-direction:row;
+    }
+
+    .contact-item{
+        flex:1;
+    }
+
+    .contact-form{
+        width:75%;
+        margin:auto;
+    }
+
+    .contact-form .form-row{
+        flex-direction:row;
+    }
+
+}
+
+@media (max-width:992px){
+
+    .navbar{
+        position:relative;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 20px;
+    }
+
+    .menu-btn{
+        display:block;
+        font-size:30px;
+        color:#fff;
+        cursor:pointer;
+    }
+
+    header .navbar .navbar-nav{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#222;
+        flex-direction:column;
+        align-items:center;
+        padding:20px 0;
+        z-index:999;
+    }
+
+    header .navbar .navbar-nav li{
+        margin:15px 0;
+    }
+
+    #menu-toggle:checked ~ .navbar-nav{
+        display:flex;
+    }
+        .hero-content{
+        text-align: left;
+    }
+
+    .hero-content h2{
+        font-size:50px;
+    }
+
+    .hero-content h4{
+        font-size:30px;
+    }
+
+    #About{
+        padding:40px 20px;
+    }
+
+    #Service .service-row{
+        width:90%;
+        gap:40px;
+    }
+
+    .gallery-images{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-columns{
+        flex-wrap:wrap;
+    }
+
+}
+
+@media (max-width:768px){
+
+        .navbar{
+        position:relative;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 20px;
+    }
+
+    .menu-btn{
+        display:block;
+        font-size:30px;
+        color:#fff;
+        cursor:pointer;
+    }
+
+    header .navbar .navbar-nav{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#000;
+        flex-direction:column;
+        align-items:center;
+        padding:20px 0;
+        z-index:999;
+    }
+
+    header .navbar .navbar-nav li{
+        margin:15px 0;
+    }
+
+    #menu-toggle:checked ~ .navbar-nav{
+        display:flex;
+    }
+    .hero-content{
+        text-align:center;
+        padding:0 20px;
+    }
+
+    .hero-content h2{
+        font-size:40px;
+    }
+
+    .hero-content h4{
+        font-size:24px;
+    }
+
+    #About{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    #About .about-text,
+    #About .about-image{
+        max-width:100%;
+    }
+
+    #Service .service-row,
+    #Service .service-row.reverse{
+        flex-direction:column;
+        text-align:center;
+        width:90%;
+        gap:30px;
+    }
+
+    #Service .service-text h3{
+        font-size:28px;
+    }
+
+    .clients-grid,
+    .contact-info,
+    .contact-form .form-row,
+    .footer-columns{
+        flex-direction:column;
+    }
+
+    .trainers-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-images{
+        grid-template-columns:1fr;
+        grid-template-rows:auto;
+    }
+
+    .gallery-images .cell{
+        height:250px;
+    }
+
+    .hours-row{
+        justify-content:center;
+        gap:20px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .section-title{
+        font-size:32px;
+    }
+
+    .hero-content h2{
+        font-size:32px;
+    }
+
+    .hero-content h4{
+        font-size:20px;
+    }
+
+    .btn{
+        padding:10px 18px;
+        font-size:14px;
+    }
+
+    .service-icon i{
+        width:75px;
+        height:75px;
+        font-size:28px;
+    }
+
+    .trainer-card img{
+        width:120px;
+        height:120px;
+    }
+
+    .posts-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .footer-bottom{
+        text-align:center;
+    }
+
+    .footer-bottom .social ul{
+        justify-content:center;
+    }
+
+}
